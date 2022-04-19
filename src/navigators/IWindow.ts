@@ -9,6 +9,7 @@ export interface NavigateParams {
     nonce?: string;
     /** The request "state" parameter. For sign out requests, this parameter is optional. */
     state?: string;
+    scriptOrigin?: string;
     response_mode?: "query" | "fragment";
 }
 
