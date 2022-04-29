@@ -119,8 +119,8 @@ export class UserManagerSettingsStore extends OidcClientSettingsStore {
             popupWindowTarget = DefaultPopupTarget,
             redirectMethod = "assign",
 
-            iframeNotifyParentOrigin,
-            iframeScriptOrigin: scriptOrigin,
+            iframeNotifyParentOrigin = args.iframeNotifyParentOrigin,
+            iframeScriptOrigin = args.iframeScriptOrigin,
 
             silent_redirect_uri = args.redirect_uri,
             silentRequestTimeoutInSeconds = DefaultSilentRequestTimeoutInSeconds,
@@ -149,8 +149,8 @@ export class UserManagerSettingsStore extends OidcClientSettingsStore {
         this.popupWindowTarget = popupWindowTarget;
         this.redirectMethod = redirectMethod;
 
-        this.iframeScriptOrigin = scriptOrigin;
         this.iframeNotifyParentOrigin = iframeNotifyParentOrigin;
+        this.iframeScriptOrigin = iframeScriptOrigin;
 
         this.silent_redirect_uri = silent_redirect_uri;
         this.silentRequestTimeoutInSeconds = silentRequestTimeoutInSeconds;
